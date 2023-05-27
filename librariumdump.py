@@ -18,7 +18,6 @@ wait = selenium.webdriver.support.ui.WebDriverWait(driver, args.timeout)
 
 magazine_urls = list(map(str.strip, filter(bool, open(args.input_path))))
 first_magazine_url = magazine_urls[0]
-print(first_magazine_url)
 
 sanitize_url = lambda url: url.replace(':', '_').replace('/', '_')
 
