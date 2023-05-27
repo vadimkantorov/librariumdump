@@ -4,5 +4,5 @@ URLS="https://librarium.fr/ru/magazines/frontier https://librarium.fr/ru/magazin
 wget --html-extension --recursuve $URLS
 ls librarium.fr/ru/*/*/*/*/*/i.html | xargs dirname | xargs printf "https://%s\n" > librariumdump.txt
 
-python3 dump.py
+python3 librariumdump.py -i librariumdump.txt -o librariumdump
 ```
