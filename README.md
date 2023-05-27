@@ -6,3 +6,6 @@ ls librarium.fr/ru/*/*/*/*/*/i.html | xargs dirname | xargs printf "https://%s\n
 
 python3 librariumdump.py -i librariumdump.txt -o librariumdump
 ```
+
+1. Log into the website in a new Chrome window
+2. Navigate to the url which is printed to the console
